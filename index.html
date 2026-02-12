@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rainfall Prediction</title>
+</head>
+<body>
+    <h2>Rainfall Based Crop Suitability Prediction</h2>
+    <form action="/predict" method="post">
+        Rainfall: <input type="text" name="Rainfall"><br><br>
+        Temperature: <input type="text" name="Temperature"><br><br>
+        Humidity: <input type="text" name="Humidity"><br><br>
+        Wind Speed: <input type="text" name="WindSpeed"><br><br>
+        <input type="submit" value="Predict">
+    </form>
+    <br>
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
